@@ -16,14 +16,14 @@ const imgArray = [...nodeList]
 const imgList = imgArray.map( ({src}) => ({
     src
 }))
-//console.log(imagList)
+console.log(imgList);
 // colocar para fora da função
 return imgList
 
   });
 
 // escrever os dados em um arquivo local Json
-fs.writeFile('interstar.json', JSON.stringify(imgList, null,2), err => {
+fs.writeFile('interstar2.json', JSON.stringify(imgList, null,2), err => {
     if(err) throw new Error(' Aconteceu algum erro')
 
     console.log(' deu certo Você Baixo todas as imagens')
