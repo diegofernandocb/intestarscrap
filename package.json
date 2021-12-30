@@ -1,5 +1,30 @@
 {
   "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "puppeteer": "^13.0.1"
-  }
+  },
+  "name": "microservice",
+  "version": "1.0.0",
+  "description": "Avaliacao interstar",
+  "main": "index.js",
+  "dev:start": "./node_modules/nodemon/bin/nodemon index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/diegofernandocb/intestarscrap.git"
+  },
+  "keywords": [
+    "Diego",
+    "Fernando"
+  ],
+  "author": "Diego Fenando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegofernandocb/intestarscrap/issues"
+  },
+  "homepage": "https://github.com/diegofernandocb/intestarscrap#readme"
 }
