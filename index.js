@@ -21,10 +21,27 @@ console.log(imgList);
 return imgList
 
   });
-
+  //conexão com banco de dados postgresql
+  // const { Pool } = require('pg')
+  // const pool = new Pool({
+  //   user: '{user}',
+  //   host: '{host}',
+  //   database: '{database}',
+  //   password: '{password}',
+  //   port: {port},
+  // })
+  // Pool.none('INSERT INTO img (src) VALUES $1', Inserts('$1', imgList))
+  //   .then(data=> {
+  //       // Rollback
+  //       console.log(err);
+  //   })
+  //   .catch(error=> {
+  //     console.log(result);
+  //   });
+  
 // escrever os dados em um arquivo local Json
 fs.writeFile('interstar2.json', JSON.stringify(imgList, null,2), err => {
-    if(err) throw new Error(' Aconteceu algum erro')
+    if(err) throw new Error(' Rollback Aconteceu algum erro')
 
     console.log(' deu certo Você Baixo todas as imagens')
 })
